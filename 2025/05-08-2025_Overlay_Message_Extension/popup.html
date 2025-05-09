@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Overlay Message</title>
+    <style>
+      body { width: 300px; padding: 10px; }
+      input, button { width: 100%; margin: 5px 0; }
+      .overlay-list { margin-top: 10px; }
+      .overlay-item { margin: 5px 0; }
+      .delete-btn { color: red; cursor: pointer; font-weight: bold; }
+    </style>
+  </head>
+  <body>
+    <h2>Overlay Message</h2>
+    <textarea id="message" placeholder="Enter your message"></textarea>
+    <br/>
+    <label for="hour">Hour:</label>
+    <input type="number" id="hour" placeholder="Enter hour (0-23)" min="0" max="23">
+    <br/>
+    <label for="minute">Minute:</label>
+    <input type="number" id="minute" placeholder="Enter minute (0-59)" min="0" max="59">
+    <br/>
+    <button id="setMessage">Set Message</button>
+    
+    <h5>https://github.com/calvinPerryCoding?tab=repositories</h5>
+
+    <div class="overlay-list">
+      <h3>Queued Overlays</h3>
+      <ul id="overlayQueue"></ul>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
